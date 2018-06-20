@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,8 +17,11 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 
 public class placesAdapter extends ArrayAdapter {
+
+    private int mColorResourceId;
     public placesAdapter(Context context, ArrayList<Data> words, int colorResourceId) {
         super(context, 0, words);
+        mColorResourceId = colorResourceId;
     }
 
     public placesAdapter(Activity context, ArrayList<Data> data) {
@@ -48,6 +52,11 @@ public class placesAdapter extends ArrayAdapter {
 
         ImageView icon = listItemView.findViewById(R.id.icon);
         icon.setImageResource(data.getmImageResourceId());
+        icon.setBackgroundResource(mColorResourceId);
+
+        View textContainer = listItemView.findViewById(R.id.text_container);
+        int color = ContextCompat.getColor(getContext(), mColorResourceId);
+        textContainer.setBackgroundColor(color);
 
         return listItemView;
 

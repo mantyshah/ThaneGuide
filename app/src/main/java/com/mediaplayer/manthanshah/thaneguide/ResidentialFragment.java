@@ -36,10 +36,10 @@ public class ResidentialFragment extends Fragment {
         data.add(new Data("The Byke Suraj Plaza", "Relaxed rooms in an\nupscale property.", R.mipmap.thebyke, 19.263124, 72.968874));
         data.add(new Data("Hotel Satkar Residency", "Relaxed hotel offering a\nrooftop pool & a hot tub.", R.mipmap.hotelsatkarresidency, 19.206020, 72.965788));
         data.add(new Data("Ginger Hotel", "Down-to-earth rooms\nin a straightforward hotel.", R.mipmap.gingerhotel, 19.207501, 72.977434));
-        data.add(new Data("Tip Top Plaza", "Relaxed option offering informal rooms.", R.mipmap.tiptopplaza, 19.185668, 72.959619));
+        data.add(new Data("Tip Top Plaza", "Relaxed option\noffering informal rooms.", R.mipmap.tiptopplaza, 19.185668, 72.959619));
         data.add(new Data("Fortune Park Lake City", "Relaxed rooms in an\nupscale property.", R.mipmap.fortuneparklakecity, 19.209763, 72.972603));
 
-        placesAdapter placesAdapter = new placesAdapter(getActivity(), data);
+        placesAdapter placesAdapter = new placesAdapter(getActivity(), data, R.color.category_residential);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 

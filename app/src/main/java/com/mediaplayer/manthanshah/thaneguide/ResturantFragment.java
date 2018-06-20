@@ -38,7 +38,7 @@ public class ResturantFragment extends Fragment {
         data.add(new Data("Veg Sizzels", "Pure veg restaurant\nspecialised in sizzlers", R.mipmap.vegsizzels,19.225708, 72.970307 ));
         data.add(new Data("Kath N Ghat" , "Non veg restaurant\nspecialised in maharashtrian cuisine", R.mipmap.kathnghat, 19.196858, 72.962963));
 
-        placesAdapter placesAdapter = new placesAdapter(getActivity(), data);
+        placesAdapter placesAdapter = new placesAdapter(getActivity(), data, R.color.category_resturant);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 

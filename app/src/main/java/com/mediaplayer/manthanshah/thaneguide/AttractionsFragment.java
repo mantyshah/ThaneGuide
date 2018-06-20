@@ -42,7 +42,7 @@ public class AttractionsFragment extends Fragment {
         data.add(new Data("Butterfly Garden", "Tranquil, small butterfly farm\nwith guided tours.", R.mipmap.butterflygarden, 19.270376, 72.955367));
         data.add(new Data("Ghodbunder Fort", "Ghodbunder Fort is a\nfort located in Ghodbunder Village.", R.mipmap.ghodbunderfort, 19.296460, 72.888311));
 
-        placesAdapter placesAdapter = new placesAdapter(getActivity(), data);
+        placesAdapter placesAdapter = new placesAdapter(getActivity(), data, R.color.category_attraction);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 

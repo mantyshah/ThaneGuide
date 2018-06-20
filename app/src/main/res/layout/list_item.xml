@@ -25,30 +25,35 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingStart="16dp"
-            android:paddingLeft="16dp">
+            android:paddingStart="@dimen/paddingStart"
+            android:paddingEnd="@dimen/paddingEnd">
 
             <TextView
                 android:id="@+id/nameText"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 tools:text="lutti"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textStyle="bold"
                 android:gravity="bottom"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="38dp"
                 />
             <TextView
                 android:id="@+id/discriptionText"
                 android:layout_width="match_parent"
-                android:layout_height="44dp"
+                android:layout_height="match_parent"
                 tools:text="one"
                 android:layout_below="@id/nameText"
-                android:textColor="@android:color/black"
-                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size"
                 android:gravity="top"
-                android:paddingEnd="5dp"
+                android:paddingEnd="@dimen/paddingEnd"
+                android:paddingStart="@dimen/paddingStart"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="38dp"
                 />
 
             <ImageView
@@ -56,10 +61,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginLeft="0dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/layout_marginEnd"
                 android:src="@mipmap/baseline_location_on_black_24"
                 />
         </RelativeLayout>

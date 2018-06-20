@@ -36,7 +36,7 @@ public class PublicPlacesFragment extends Fragment {
         data.add(new Data("Ramdasrao Garden", "Garden for childrens.", R.mipmap.ramdasraogarden, 19.214579, 72.963126));
         data.add(new Data("Upvan Garden", "Garden based near\nupvan lake.", R.mipmap.upvangarden, 19.225499, 72.955817));
 
-        placesAdapter placesAdapter = new placesAdapter(getActivity(), data);
+        placesAdapter placesAdapter = new placesAdapter(getActivity(), data, R.color.category_publicplaces);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
